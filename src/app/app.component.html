@@ -1,0 +1,9 @@
+<div class="centrar" *ngFor="let item of genders">
+  <div class="container">
+    <label for="radiobutton"><input type="radio" name="gender" (change)="radioChangesevent($event)"
+      value="{{item}}"></label>
+    <i>{{item}}</i>
+  </div>
+</div>
+<br> <br>
+<span>el genero seleccionado es: {{selectGender}}</span>
